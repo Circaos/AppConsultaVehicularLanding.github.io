@@ -25,20 +25,25 @@ const infoBtn = document.getElementById('infoBtn');
 
         // Acción del botón de descarga
         downloadBtn.addEventListener('click', () => {
-            // En un caso real, aquí iría el enlace de descarga
-            alert('¡Gracias por tu interés en AppSync! En una implementación real, este botón descargaría el archivo APK o redirigiría a Google Play Store.');
+            // // En un caso real, aquí iría el enlace de descarga
+            // alert('¡Gracias por tu interés en AppSync! En una implementación real, este botón descargaría el archivo APK o redirigiría a Google Play Store.');
             
-            // Simulación de descarga
-            downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Descargando...';
-            downloadBtn.disabled = true;
+            // // Simulación de descarga
+            // downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Descargando...';
+            // downloadBtn.disabled = true;
             
-            setTimeout(() => {
-                downloadBtn.innerHTML = '<i class="fab fa-android"></i> ¡Descarga completada!';
-                setTimeout(() => {
-                    downloadBtn.innerHTML = '<i class="fab fa-android"></i> Descargar para Android';
-                    downloadBtn.disabled = false;
-                }, 2000);
-            }, 1500);
+            // setTimeout(() => {
+            //     downloadBtn.innerHTML = '<i class="fab fa-android"></i> ¡Descarga completada!';
+            //     setTimeout(() => {
+            //         downloadBtn.innerHTML = '<i class="fab fa-android"></i> Descargar para Android';
+            //         downloadBtn.disabled = false;
+            //     }, 2000);
+            // }, 1500);
+
+
+            window.open('https://servidorconsultavehicular-production.up.railway.app/appConsultaVehicular', '_blank');
+
+
         });
 
         // Efecto de animación al cargar la página
