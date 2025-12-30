@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>AppConsultaVehicular | Descarga nuestra app Android</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Header con logo y botón de información -->
+        <header>
+            <div class="logo">
+                <img class="loguito" src="./apple-icon-180x180.png" alt="logo">
+                <span>AppConsultaVehicular</span>
+            </div>
+            <button class="info-icon" id="infoBtn">
+                <i class="fas fa-info-circle"></i>
+            </button>
+        </header>
+
+        <!-- Sección principal -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Flexibiliza tus consultas con <span class="highlight">AppConsultaVehicular</span></h1>
+                <p class="description">
+                    La aplicación mejora y dinamiza las consultas vehiculares. Diseñada para maximizar tu productividad con una interfaz intuitiva y moderna.
+                </p>
+                <button class="download-btn" id="downloadBtn">
+                    <img class="loguito" src="./apple-icon-180x180.png" alt="logo">
+                    Descargar para Android
+                </button>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <svg class="phone-frame" viewBox="0 0 232 471" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 40C1 18.4609 18.4609 1 40 1H192C213.539 1 231 18.4609 231 40V431C231 452.539 213.539 470 192 470H40C18.4609 470 1 452.539 1 431V40Z" stroke="#E0E0E0" stroke-width="2"/>
+                        <path d="M22 68C22 56.9543 30.9543 48 42 48H190C201.046 48 210 56.9543 210 68V403C210 414.046 201.046 423 190 423H42C30.9543 423 22 414.046 22 403V68Z" fill="white"/>
+                        <circle cx="116" cy="30" r="5" fill="#E0E0E0"/>
+                        <rect x="99" y="440" width="34" height="4" rx="2" fill="#E0E0E0"/>
+                    </svg>
+                    <div class="app-screenshot">
+                        <div style="text-align: center; padding: 20px;">
+                            <img class="loguito" src="./apple-icon-180x180.png" alt="logo">
+                            <div>AppConsultaVehicular</div>
+                            <div style="font-size: 14px; margin-top: 10px;">Mejora tu productividad</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sección de características -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Características Principales</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Masividad de consultas</h3>
+                    <p>Realiza una consulta masiva en tiempor real.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Creacion de un backup offline</h3>
+                    <p>Tus consultas quedan guardadas de forma offline para agilizarlas en el futuro.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Sincronización automatica</h3>
+                    <p>Los datos obtenido son en tiempo real y fidedignos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de información -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Información de la App</h2>
+                <button class="close-modal" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>AppConsultaVehicular fue desarrollada con el objetivo de agilizar las consultas vehiculares:</p>
+                <ul class="info-list">
+                    <li><i class="fas fa-calendar-alt"></i> <span><strong>Fecha de lanzamiento:</strong> Junio 2025</span></li>
+                    <li><i class="fas fa-code"></i> <span><strong>Tecnologías usadas:</strong> Kotlin, Jetpack Compose, Room Database</span></li>
+                    <li><i class="fas fa-users"></i> <span><strong>Equipo de desarrollo:</strong> 1 desarrolladores y diseñador UX/UI</span></li>
+                    <li><i class="fas fa-clock"></i> <span><strong>Tiempo de desarrollo:</strong> 3 meses desde la concepción hasta el lanzamiento</span></li>
+                    <li><i class="fas fa-heart"></i> <span><strong>Filosofía:</strong> Minimalismo digital y productividad</span></li>
+                    <li><i class="fas fa-shield-alt"></i> <span><strong>Privacidad:</strong> Todos los datos están encriptados y no se comparten con terceros</span></li>
+                </ul>
+                <p style="margin-top: 20px;">La aplicación sigue en constante mejora con actualizaciones mensuales basadas en los comentarios de nuestros usuarios.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 AppConsultaVehicular. Todos los derechos reservados.</p>
+            <p style="margin-top: 10px; font-size: 14px;">Disponible exclusivamente para Android 8.0 y versiones superiores.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
